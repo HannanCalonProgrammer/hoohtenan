@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  outline: none;
+  padding: 5px;
+  color: black;
+}
+
+body {
+  background-image: url(habibjindan.jpg.jpg);
+  font-weight: bold;
+}
+
+.title {
+  margin-left: 50px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 500px;
+  height: auto;
+  background: aqua;
+  padding: 35 px 50px;
+  border-radius: 10px;
+  border: 5px solid black;
+}
+
+.form.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 100px;
+  font-size: 20px;
+}
+
+.form .input_wrap {
+  margin-bottom: 20px;
+  width: 325px;
+  position: relative;
+}
+
+.form .input_wrap:last-child {
+  margin-bottom: 0;
+}
+
+.form .input_wrap label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form .input_wrap input {
+  padding: 15px;
+  width: 100%;
+  border: 1px solid transparent;
+  font-size: 16px;
+  border-radius: 3px;
+  margin-left: 50px;
+}
+
+.form .input_wrap .input {
+  background: white;
+  padding-right: 35px;
+  /* margin-left: 60px; */
+  border: 3px solid black;
+}
+
+.form .input_wrap .input:focus {
+  border-color: aqua;
+}
+
+.form .input_wrap .error_msg {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: red;
+  display: none;
+}
+
+.form .input_wrap .btn {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: black;
+  background: gold;
+  cursor: pointer;
+  margin-left: 75px;
+  border: 3px solid black;
+}

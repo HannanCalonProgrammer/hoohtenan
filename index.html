@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Login</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <div class="title">Login User</div>
+
+        <form id="submit">
+          <div class="input_wrap">
+            <label for="input_text" class="title">Email</label>
+            <div class="input_field">
+              <input type="text" class="input" id="input_text" />
+            </div>
+            <label for="input_text" class="title">Password</label>
+            <div class="input_field">
+              <input type="password" class="input" id="input_password" />
+            </div>
+
+            <input type="submit" value="login" class="btn" id="login_btn" />
+            <!-- <div class="input_field">
+              <input type="text" class="input" id="input_text" />
+
+              <div class="input_wrap">
+                <label for="input_text" class="title">Password</label>
+                <div class="input_field">
+                  <input type="password" class="input" id="input_password" />
+
+                  <div class="input_wrap">
+                    <span class="error_msg"
+                      >Usrnam atau Passwor Salah, Ulangi Lagi</span
+                    >
+                    <input
+                      type="submit"
+                      value="login"
+                      class="btn"
+                      id="login_btn"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script>
+      var input_text = document.querySelector("#input_text");
+      var input_password = document.querySelector("#input_password");
+      var error_msg = document.querySelector(".error_msg");
+      var formSubmit = document.querySelector("#submit");
+
+      formSubmit.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        if (input_text.value.length < 1) {
+          error_msg.style.display = "inline-block";
+          input_text.style.border = "1px solid #f74040";
+          return false;
+        }
+
+        if (input_text.value.length < 1) {
+          error_msg.style.display = "inline-block";
+          input_text.style.border = "1px solid #f74040";
+          return false;
+        }
+
+        error_msg.style.display = "none";
+        alert("Login Succesfully");
+      });
+
+      var input_fields = document.querySelector(".input");
+
+      // input_fields.forEarch(function (input_item) {
+      //     input_item.addEventListener("input", function () {
+
+      //     })
+      // })
+    </script>
+  </body>
+</html>
